@@ -1,0 +1,52 @@
+\documentclass{article}
+\usepackage{hyperref}
+\usepackage{csvsimple}
+\title{NlP Project Summery Of Books}
+\author{Saba Razi}
+\date{June 2023}
+
+\begin{document}
+
+\maketitle
+
+\section*{Git Repository}
+Git repository address: \url{https://github.com/sabarz/NLP_PROJECT_summary}
+
+\section*{Project Overview}
+In this project, we used the website \url{www.goodreads.com} for crawling summaries of three genres: crime, romance, and psychology. The best parts of the website for crawling were identified for each genre. Here are the lists of books for each genre:
+
+\begin{itemize}
+  \item Crime books: \url{https://www.goodreads.com/list/show/11.Best_Crime_Mystery_Books?page=1}
+  \item Romance books: \url{https://www.goodreads.com/list/show/10762.Best_Book_Boyfriends}
+  \item Psychology books: 
+    \begin{itemize}
+      \item \url{https://www.goodreads.com/list/show/41846.Inspiring_Books}
+      \item \url{https://www.goodreads.com/list/show/691.Best_Self_Help_Books}
+      \item \url{https://www.goodreads.com/list/show/86863.Life_Transformation_Books}
+    \end{itemize}
+\end{itemize}
+
+We used the scrapy library for crawling. In the "spiders" folder, the "books.py" file was used for crawling the raw data. You can run it with the command \texttt{chmod u+x raw.sh}. The raw data is a JSON file, where each genre has a list of summaries.
+
+The "cleaning.py" file was used to clean the data. You can run it with the command \texttt{chmod u+x cleaning.sh}. The cleaned data is a JSON file, where each genre has a list of cleaned summaries. The cleaning process involved removing numbers, unicode, undefined words with numbers, and most punctuations (except the period). Additionally, any summaries that were labeled as "None" were deleted.
+
+The "sentenceBroken.py" file was used for breaking the data into sentences. You can run it with the command \texttt{chmod u+x sentenceBroken.sh}. The "sentenceBroken" data is a JSON file that includes a key, genre, summary, and a list of sentences. Sentences were created using the \texttt{split()} function by splitting at periods.
+
+The "wordBroken.py" file was used for breaking the data into words. You can run it with the command \texttt{chmod u+x wordBroken.sh}. The "wordBroken" data is a JSON file that includes a key, genre, summary, and a list of words. Words were tokenized using the \texttt{split()} function by splitting at spaces.
+
+\section*{Huggingface Repository}
+Link to the Huggingface repository dataset: \url{https://huggingface.co/datasets/sabarzii/NLP_summery_Books}
+
+\section*{stats:}
+\begin{table}[htbp]
+    \centering
+    \csvautotabular{stats.csv}
+\end{table}
+
+
+\begin{table}[htbp]
+    \centering
+    \csvautotabular{stats2.csv}
+\end{table}
+\end{document}
+
