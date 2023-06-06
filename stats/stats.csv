@@ -1,0 +1,7 @@
+,crime,romance,psychology
+number of summeries raw data:,6900,6747,4528
+number of summeries clean data,2679,2679,2679
+number of sentences,777488,1131130,686036
+number of words,13680017,18325126,12040883
+number of unique words,702759,811452,624185
+10 common most used words,"['ladykiller.Rex', 'Century.Orrie', 'Wolfeafter', 'guiltydecides', 'entertainmentparticularly', 'Wolfe.Another', 'performer.a', 'pure.Lots', 'puzzles.Rex', 'writer.Rex']","['birthdayto', 'Awakening.A', 'goner.and', 'Aiden.If', 'trainingwhich', 'schedule.Awesome.But', 'Fate.One', 'destroyed.Those', 'Fate.Hey', 'more.04112012Just']","['aliensas', 'dentalfloss', 'item.Delivering', 'relatives.Reading', 'contemplations.Hiswas', 'engaging.How', 'sameysamey.Great', 'mirandareadsHave', 'shockThat', '1998.Bryson']"
