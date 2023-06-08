@@ -8,3 +8,6 @@ In this project, we aim to automatically detect the genre of a book (psychology,
 Information about the Goodreads website: This site allows readers to read books, review them, read other people's reviews, and talk to their friends about the books they have read. Founded in 2006 by Otis Chandler and Elizabeth Khuri, it is now a subsidiary of Amazon. It currently serves over 75 million users worldwide and has more than 2.5 billion reviews of various books on its website.
 
 Method and Data: The data is in English and the writing style is formal. We will use the Beautifulsoup library to collect information about book abstracts from the Goodreads website. This site has an abstract for each book, and you can view books based on genre in the search section. Since this site has 97,000 books for the psychology genre, 97,000 books for the crime genre, and 266,000 books for the romance genre, we will limit the data to a smaller sample size to train our model.
+
+the crawled data can be seen in link below :
+https://drive.google.com/drive/folders/1u3MdUvaj0kQWxTFE1m5sQj4aJ9eEmS7g?usp=sharing
